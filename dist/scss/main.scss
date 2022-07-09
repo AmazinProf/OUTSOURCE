@@ -291,34 +291,39 @@ margin-bottom: 10px;
     padding: 20px;
 }
 .suitable{
-    display: grid;
-    position: relative;
-    place-items: center;
-    gap: 40px;
-    overflow: hidden;
+    display: block;
+     width: 1050px;
     margin-top: 20px;
-    padding-left: 200px;
+    margin: 0 auto;
 }
 .suitable-image{
    display: flex;
-   width: calc(150px * 9);
+   gap: 40px;
+   width: 100%;
+   overflow: hidden;
    animation: suitable-scroll 9s linear infinite;
 
 }
 @keyframes suitable-scroll{
     0%{
-        left: 0px;
+        left: 0%;
     }
-    10%{
-        left: calc(-150px * 9);
+    40%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    100%{
+        left: -300%;
     }
 }
 .suitable-image img{
-    // align-items: center;
-    width: 150px;
+    align-items: center;
+    width: 20%;
+
 
 }
-
 .company-text{
     text-align: center;
     margin: 20px;

@@ -264,41 +264,53 @@ ul li ul li {
 }
 
 .suitable {
-  display: grid;
-  position: relative;
-  place-items: center;
-  gap: 40px;
-  overflow: hidden;
+  display: block;
+  width: 1050px;
   margin-top: 20px;
-  padding-left: 200px;
+  margin: 0 auto;
 }
 
 .suitable-image {
   display: flex;
-  width: 1350px;
+  gap: 40px;
+  width: 100%;
+  overflow: hidden;
   -webkit-animation: suitable-scroll 9s linear infinite;
           animation: suitable-scroll 9s linear infinite;
 }
 
 @-webkit-keyframes suitable-scroll {
   0% {
-    left: 0px;
+    left: 0%;
   }
-  10% {
-    left: -1350px;
+  40% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
   }
 }
 
 @keyframes suitable-scroll {
   0% {
-    left: 0px;
+    left: 0%;
   }
-  10% {
-    left: -1350px;
+  40% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
   }
 }
 .suitable-image img {
-  width: 150px;
+  align-items: center;
+  width: 20%;
 }
 
 .company-text {
