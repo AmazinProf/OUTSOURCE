@@ -1,0 +1,485 @@
+    @import './resets';
+    @import './variables';
+    // FIRST ICONS
+   
+    .topheader {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 850px;
+        background-color: #243f51;
+        height: 30px;
+    }
+    
+    .divIcon {
+        color: yellow;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: medium;
+    }
+    
+    span:hover {
+        color: blue;
+    }
+    
+    .divInfo {
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: small;
+    }
+    
+    // SECONDHEADER
+    .bang{
+        padding-left:10px ;
+    }
+    .secondHeader {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+    }
+    
+    .outsourceImg {
+        display: flex;
+        position: absolute;
+        margin-left: -980px;
+    }
+    
+    .firstNav {
+        display: flex;
+        position: relative;
+        margin-right: -800px;
+        
+
+    }
+    
+    .firstNavbar {
+        
+        margin-top: 25px;
+        & ul li ul{
+            display: none;
+        }
+        & ul li:hover ul{
+            display: block;
+            position: absolute;
+            line-height: 40px;
+            padding-top: 27px;
+            
+         
+
+        }
+        & ul li ul li a{
+            color: white;
+            
+            &:hover{
+            color: black;
+            
+            }
+        }
+        & ul li:hover li{
+            display: block;
+            background-color: blue;
+            color: black;
+        }
+        & ul li a {
+            text-decoration: none;
+            color: black;
+            padding-left: 10px;
+            
+    
+    
+            &:hover {
+                color: blue;
+            }
+        } 
+    }
+   
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
+        
+    }
+    
+    ul {
+        display: inline-flex;
+        list-style: none;
+        color: black;
+        
+    }
+    ul li ul li a{
+        
+        &:hover{
+            color: black;
+            
+         }
+    }
+   
+    ul li ul li{
+        width: 250px;
+        
+        
+
+    }
+    
+    
+   
+    
+    
+    .firstButton {
+        background-color: blue;
+        height: 30px;
+        margin-top: -7.5px;
+        border-radius: 9px;
+        padding-top: 5px;
+        // margin-bottom: -10px;
+        width: 200px;
+        text-align: center;
+        &:hover {
+            background-color: #3a3a3a;
+        }
+    }
+    // THIRD HEADER
+    .thirdHeader{
+        background-color: orange;
+        height: 40px;
+    
+        
+    }
+    .ten{
+        padding-top: 10px;
+    }
+    .secondNavbar {
+        
+        height: 40px;
+
+    //     & ul li 
+    & ul li ul{
+        display: none;
+
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+        padding-left: 10px;
+        
+
+
+        &:hover {
+            color: white;
+        }
+    }
+    & ul li:hover ul{
+        display: block;
+        text-decoration: none;
+        position:absolute;
+        line-height: 40px;
+        background-color: blue;
+        width: auto;
+        
+     
+
+    }     
+
+    
+    & ul li ul{
+        margin-top: 12px;    
+    }
+    & ul li ul li a{
+        color: white;
+    }
+    & ul li:hover{
+        background-color: #3a3a3a;
+        height: 40px;
+
+        
+        
+    }
+    }
+// IMAGES
+.images{
+    position: relative;
+    z-index: -1;
+    
+
+}
+.container{
+overflow: hidden;
+border-top: 1px solid;
+
+}
+.container-slide{
+position: relative;
+display: flex;
+width: 200%;
+animation: slider 10s ease infinite alternate-reverse;
+}
+
+.radio{
+    display: none;
+}
+.divImage img{
+    width: 100%;
+}
+@keyframes slider{
+    0%{
+        left: 0%;
+    }
+    40%{
+left: 0%;
+    }
+    50%{
+left: -100%;
+    }
+    100%{
+left: -100%;
+    }
+    
+}
+// ARROW
+#arrow{
+    display: block;
+    position: relative;
+    // top: -400px;
+    font-size: 60px;
+    color: white;
+    
+}
+#arrow1{
+    margin-left: 20px;
+}
+#arrow2{
+margin-right: 20px;
+float: right;
+
+}
+// CLIENT TEXT
+.client-text{
+    position: relative;
+    display: block;
+    top: -60px;
+}
+
+// CLIENT IMAGE SLIDER
+.client-image-slider{
+position: relative; 
+// text-align: center;
+color: #7e7e7e;
+font-weight:bold;
+margin-left: 300px; 
+
+}
+.client-image img{
+    width: 150px;
+    height: 45px;
+    padding-left: 20px;
+margin-top: -30px;
+margin-bottom: 10px;
+
+}
+// SUITABLE IMAGE CONTAINER
+.suitable-image-container{
+    background-color: #7e8990;
+    
+}
+.suitable-image-text{
+    text-align: center;
+    font-size: large;
+    color: white;
+    padding: 20px;
+}
+.suitable{
+    display: grid;
+    position: relative;
+    place-items: center;
+    gap: 40px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-left: 200px;
+}
+.suitable-image{
+   display: flex;
+   width: calc(150px * 9);
+   animation: suitable-scroll 9s linear infinite;
+
+}
+@keyframes suitable-scroll{
+    0%{
+        left: 0px;
+    }
+    10%{
+        left: calc(-150px * 9);
+    }
+}
+.suitable-image img{
+    // align-items: center;
+    width: 150px;
+
+}
+
+.company-text{
+    text-align: center;
+    margin: 20px;
+    
+}
+.company-head-text{
+    font-size: 30px;
+}
+.company-para-text{
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 30px;
+    width: 1200px;
+    align-content: center;
+    color: #7e7e7e;
+}
+// TECH STACK
+.tech-row-stack{
+    text-align: center;
+    font-size: 40px;
+}
+.tech-card{
+    
+    // border: 2px solid #f8f8f8;
+    padding-top: 20px;
+    display: block;
+    margin: 20px;
+    width: 400px;
+    margin-left: 300px;
+
+}
+.tech-column1{
+display: flex;
+flex-direction: column;
+position:relative;
+
+& .tech-card{
+ background:#f8f8f8 ;
+ height: 250px;
+
+}
+
+& .tech-card-details{
+    margin: 10px;
+   
+    
+}
+}
+.tech-card-head{
+    display: flex;
+    gap: 10px;
+    & i{
+        font-size: 30px;
+        // color: blue;
+    }
+    & h4{
+        font-size: 20px;
+    } 
+}
+.tech-card-body{
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.tech-card-body1{
+    width: 200px;
+}
+.tech-card-body2{
+    width: 200px;
+}
+
+.tech-column2{
+    display: flex;
+    
+
+    margin-left: 430px;
+    flex-direction: column;
+    position: relative;
+    top: calc(-290px * 2);
+    width: 400px;
+    & .tech-card{
+        // margin: 10px;
+        background:#f8f8f8 ;
+        height: 200px;
+
+       
+       }
+       & .tech-card-details{
+           margin: 10px;
+           
+       }
+
+}
+.tech-column3{
+    display: flex;
+    margin-left: 860px;
+    position: relative;
+    top: calc(-290px * 2 + -240px * 3);
+    flex-direction: column;
+    width: 400px;
+    & .tech-card{
+        // margin: 10px;
+        background:#f8f8f8 ;
+        height: 250px;
+
+       
+       }
+       & .tech-card-details{
+           margin: 10px;
+           
+       }
+
+}
+.fa-laptop-code{
+    color: blue;
+}
+.fa-box-open{
+    color: orangered;
+}
+.fa-address-card{
+    color: #d73a5f;
+}
+.fa-mobile-screen-button{
+    color: blue;
+}
+.fa-gears{
+    color: green;
+}
+.fa-database{
+    color: #f19416;
+}
+.fa-thumbs-up{
+    color: green;
+}
+// .tech-card-head{
+//     margin-left: 40px;
+//     display: flex;
+//     gap: 20px;
+// }
+// // .tech-card-details{
+    
+// // }
+// .tech-card-body{
+//     display: grid;
+// }
+    // }
+    // RESPONSIVENESS 
+    // @media (min-width: 750px) and (max-width: 978px) {
+    //     .topheader {
+    //         // background-color: red;
+    //         margin: 0 auto;
+    //         gap: 350px;
+    //     }
+    // }
+    // @media (min-width: 400px) and (max-width: 600px) {
+    //     .topheader {
+    //         background-color: red;
+    //         margin: 0 auto;
+    //         gap: 100px;
+    //     }
+    // }
