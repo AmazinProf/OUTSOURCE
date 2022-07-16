@@ -1,3 +1,5 @@
-.topheader {
-  display: none;
+@media (min-width: 300px) and (max-width: 978px) {
+  .topheader {
+    background: red;
+  }
 }/*# sourceMappingURL=responsive500.css.map */
