@@ -6,9 +6,7 @@
 
 .topheader {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 850px;
+  justify-content: space-around;
   background-color: #243f51;
   height: 30px;
 }
@@ -16,9 +14,8 @@
 .divIcon {
   color: yellow;
   display: flex;
-  gap: 10px;
-  align-items: center;
-  font-size: medium;
+  margin: auto 0;
+  gap: 20px;
 }
 
 span:hover {
@@ -27,83 +24,118 @@ span:hover {
 
 .divInfo {
   color: white;
-  display: flex;
-  align-items: center;
-  font-size: small;
+  font-size: 14px;
+  position: relative;
+  margin: auto 0;
+}
+.divInfo > p {
+  margin: auto 0;
 }
 
-.bang {
-  padding-left: 10px;
+.menu-bar {
+  display: none;
 }
 
 .secondHeader {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  height: 70px;
+  justify-content: space-around;
 }
 
 .outsourceImg {
-  display: flex;
-  position: absolute;
-  margin-left: -980px;
-}
-
-.firstNav {
-  display: flex;
-  position: relative;
-  margin-right: -800px;
+  padding: 15px 30px;
 }
 
 .firstNavbar {
-  margin-top: 25px;
+  background: red;
 }
-.firstNavbar ul li ul {
-  display: none;
+.firstNavbar > ul {
+  margin: 0 auto;
 }
-.firstNavbar ul li:hover ul {
+.firstNavbar > ul > li {
+  float: left;
+  padding: 0 0 0 20px;
+  list-style: none;
+  margin: 40px auto;
+}
+.firstNavbar > ul > li:hover > ul li {
   display: block;
-  position: absolute;
-  line-height: 40px;
-  padding-top: 27px;
 }
-.firstNavbar ul li ul li a {
-  color: white;
-}
-.firstNavbar ul li ul li a:hover {
-  color: black;
-}
-.firstNavbar ul li:hover li {
-  display: block;
-  background-color: blue;
-  color: black;
-}
-.firstNavbar ul li a {
-  text-decoration: none;
-  color: black;
-  padding-left: 10px;
-}
-.firstNavbar ul li a:hover {
+.firstNavbar > ul > li:hover > a {
   color: blue;
 }
+.firstNavbar > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.firstNavbar > ul > li > ul {
+  position: absolute;
+  padding-top: 45px;
+}
+.firstNavbar > ul > li > ul > li {
+  display: none;
+  list-style: none;
+  line-height: 30px;
+  background: #0b569a;
+  width: 250px;
+  padding-left: 10px;
+}
+.firstNavbar > ul > li > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.firstNavbar > ul > li > ul > li > a:hover {
+  color: black;
+}
 
-nav ul {
+.thirdHeader {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  background: #feb013;
+  height: 40px;
 }
 
-ul {
-  display: inline-flex;
+.secondNavbar {
+  padding-top: 10px;
+}
+.secondNavbar > ul {
+  margin: 0 auto;
+}
+.secondNavbar > ul > li {
+  float: left;
+  padding: 0 0 0 20px;
   list-style: none;
+}
+.secondNavbar > ul > li:hover > ul li {
+  display: block;
+}
+.secondNavbar > ul > li:hover > a {
+  color: white;
+}
+.secondNavbar > ul > li > a {
+  text-decoration: none;
   color: black;
 }
-
-ul li ul li a:hover {
-  color: black;
+.secondNavbar > ul > li > ul {
+  position: absolute;
+  padding-top: 10px;
 }
-
-ul li ul li {
+.secondNavbar > ul > li > ul > li {
+  display: none;
+  list-style: none;
+  line-height: 30px;
+  background: blue;
   width: 250px;
+  padding-left: 10px;
+}
+.secondNavbar > ul > li > ul > li:hover {
+  background: #7e8990;
+  height: auto;
+}
+.secondNavbar > ul > li > ul > li > a {
+  text-decoration: none;
+  color: white;
 }
 
 .firstButton {
@@ -111,54 +143,13 @@ ul li ul li {
   height: 30px;
   margin-top: -7.5px;
   border-radius: 9px;
-  padding-top: 5px;
-  width: 200px;
+  padding: 5px 3px;
+  margin-bottom: -10px;
+  width: 100%;
   text-align: center;
 }
 .firstButton:hover {
   background-color: #3a3a3a;
-}
-
-.thirdHeader {
-  background-color: orange;
-  height: 40px;
-}
-
-.ten {
-  padding-top: 10px;
-}
-
-.secondNavbar {
-  height: 40px;
-}
-.secondNavbar ul li ul {
-  display: none;
-}
-.secondNavbar ul li a {
-  text-decoration: none;
-  color: black;
-  padding-left: 10px;
-}
-.secondNavbar ul li a:hover {
-  color: white;
-}
-.secondNavbar ul li:hover ul {
-  display: block;
-  text-decoration: none;
-  position: absolute;
-  line-height: 40px;
-  background-color: blue;
-  width: auto;
-}
-.secondNavbar ul li ul {
-  margin-top: 12px;
-}
-.secondNavbar ul li ul li a {
-  color: white;
-}
-.secondNavbar ul li:hover {
-  background-color: #3a3a3a;
-  height: 40px;
 }
 
 .images {
@@ -231,25 +222,17 @@ ul li ul li {
   float: right;
 }
 
-.client-text {
-  position: relative;
-  display: block;
-  top: -60px;
-}
-
 .client-image-slider {
-  position: relative;
+  display: flex;
+  margin-top: -40px;
+  justify-content: center;
   color: #7e7e7e;
   font-weight: bold;
-  margin-left: 300px;
 }
 
 .client-image img {
-  width: 150px;
+  width: 120px;
   height: 45px;
-  padding-left: 20px;
-  margin-top: -30px;
-  margin-bottom: 10px;
 }
 
 .suitable-image-container {
@@ -265,7 +248,7 @@ ul li ul li {
 
 .suitable {
   display: block;
-  width: 1050px;
+  width: 55%;
   margin-top: 20px;
   margin: 0 auto;
 }
@@ -337,43 +320,36 @@ ul li ul li {
   font-size: 40px;
 }
 
-.tech-card {
-  padding-top: 20px;
-  display: block;
-  margin: 20px;
-  width: 400px;
-  margin-left: 300px;
+.tech-head {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
-.tech-column1 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.tech-column1 .tech-card {
+.tech-card {
   background: #f8f8f8;
-  height: 250px;
-}
-.tech-column1 .tech-card-details {
-  margin: 10px;
+  padding: 20px 15px;
+  margin: 20px 0;
 }
 
 .tech-card-head {
   display: flex;
+  margin-top: 20px;
   gap: 10px;
 }
 .tech-card-head i {
-  font-size: 30px;
+  font-size: 50px;
 }
 .tech-card-head h4 {
-  font-size: 20px;
+  font-size: 30px;
+  margin: auto 0;
 }
 
 .tech-card-body {
   display: flex;
   gap: 40px;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   line-height: 30px;
 }
 
@@ -382,39 +358,7 @@ ul li ul li {
 }
 
 .tech-card-body2 {
-  width: 200px;
-}
-
-.tech-column2 {
-  display: flex;
-  margin-left: 430px;
-  flex-direction: column;
-  position: relative;
-  top: -580px;
-  width: 400px;
-}
-.tech-column2 .tech-card {
-  background: #f8f8f8;
-  height: 200px;
-}
-.tech-column2 .tech-card-details {
-  margin: 10px;
-}
-
-.tech-column3 {
-  display: flex;
-  margin-left: 860px;
-  position: relative;
-  top: -1300px;
-  flex-direction: column;
-  width: 400px;
-}
-.tech-column3 .tech-card {
-  background: #f8f8f8;
-  height: 250px;
-}
-.tech-column3 .tech-card-details {
-  margin: 10px;
+  float: right;
 }
 
 .fa-laptop-code {
@@ -443,4 +387,50 @@ ul li ul li {
 
 .fa-thumbs-up {
   color: green;
+}
+
+.div-banner {
+  display: flex;
+  width: 100%;
+}
+
+.first-banner {
+  width: 50%;
+}
+
+.second-banner {
+  width: 50%;
+}
+
+.banner1 {
+  background: #ef3414;
+}
+
+.banner2 {
+  background: #38307c;
+}
+
+.banner3 {
+  background: #ed8a00;
+}
+
+.banner4 {
+  background: #43b0ba;
+}
+
+[class^=banner] {
+  padding: 20px 0px 0px 20px;
+}
+
+.banner-head {
+  font-size: 30px;
+}
+
+.banner-text {
+  display: flex;
+  width: auto;
+  font-size: 30px;
+}
+.banner-text img {
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,159 @@
 @media (min-width: 300px) and (max-width: 978px){
 .topheader{
-    // display: none;
-    background: red;
+    display: none;
+    // background: red;
+}
+
+.secondHeader{
+    display:flex ;
+    justify-content:space-between ;
+}
+.menu-bar{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 40px;
+
+    .fa-bars{
+        font-size: 25px;
+
+        margin-right: 30px;
+        color: blue;
+
+    }
+
+}
+
+.firstNavbar{
+margin: 0;
+padding: 0;
+    >ul{
+        position: absolute;
+        left: 20px;
+        height: 100%;
+        top: 10%;
+        // top: 100px;
+        width: 90%;
+        >li{
+            float: none;
+            margin: 0 !important;
+            >a span { 
+                float: right;
+                
+                color: red;
+            }
+            >ul{
+                position: static;
+                margin: 0 !important;
+                padding-top: 0px;
+                >li{
+                    width: auto;
+                }
+            }
+        }
+
+    }
+}
+
+#firstButton{
+    display: none;
+
+}
+.thirdHeader{
+    height: auto;
+}
+
+.secondNavbar{
+    margin: 0;
+    padding: 0;
+        >ul{
+            position: absolute;
+            left: 20px;
+            height: 100%;
+            top: 18%;
+            width: 90%;
+            // bottom: 0;
+            >li{
+                float: none;
+                position: relative;
+                // margin: 0 !important;
+                >a span { 
+                    float: right;
+                    
+                    color: red;
+                }
+                >ul{
+                    position: static;
+                    margin: 0 !important;
+                    >li{
+                        width: auto;
+                    }
+    
+                }
+            }
+    
+        }
+    }
+    .container{
+
+        position: relative;
+        top: 300px;
+        // z-index: -1;
+        
+    
+    }
+
+
+// CLIENT IMAGE SLIDER
+.client-image-slider{
+display: none;
+
+}
+.suitable-image-container{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.company-text{
+    position: relative;
+    width: auto;
+    float: none;
+    top: 450px; 
+    
+
+}
+
+.company-para-text{
+ width: auto;  
+ float: none; 
+}
+.tech-stack{
+    position: relative;
+    top: 430px;
+}
+.tech-row-stack{
+    // position: absolute;
+    display: block;
+}
+.tech-head{
+    display: block;
+    margin: 0px 20px;
+
+}
+.div-banner{
+    display: block;
+    
+    width: 100%;
+    margin-top: 500px;
+}
+.first-banner{
+    // display: block;
+    // position: relative;
+    width: auto;
+}
+.second-banner{
+    // position: relative;
+    width: auto;
+    
 }
 }

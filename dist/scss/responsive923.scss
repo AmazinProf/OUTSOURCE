@@ -1,0 +1,84 @@
+@media (min-width: 979px) and (max-width: 1255px){
+    .topheader{
+        // display: none;
+        background: red;
+    }
+    .thirdHeader{
+        padding-top:20px ;
+        padding-bottom: 20px;
+        height: 80px;
+
+    }
+  
+    .secondNavbar{
+        >ul {
+
+        >li{
+            // white-space: inherit;
+           
+        
+            >ul{
+                padding-top: 0px;
+
+            }
+
+        }
+    }
+    }
+    // .client-image-slider{
+    //     display: inline;
+    //     // left: 0;
+    // }
+    // .client-image img{
+    //     width: 120px;
+    //     height: 45px;
+    //     padding-left: 20px;
+    
+    // }
+    // .client-text{
+    //    margin-left: 10px;
+    // }
+    .company-text{
+        position: relative;
+        width: auto;
+        float: none;
+        
+    
+    }
+    .company-head-text{
+    
+    float: none; 
+    
+    }
+    .company-para-text{
+     width: auto;  
+     float: none; 
+    }
+
+.tech-row-stack{
+    text-align: center;
+    font-size: 40px;
+}
+.tech-head{
+    // display: block;
+    margin: 0px 20px;
+    
+
+    
+}
+.tech-card-body{
+    width: 100%;
+    // white-space: nowrap;
+
+    
+}
+.tech-card-body1{
+    width: auto;
+    white-space: nowrap;
+
+}
+.tech-card-body2{
+    // white-space: nowrap;
+    width: auto;
+}
+}
